@@ -3,9 +3,13 @@
 #include <string>
 using namespace std;
 
+#include "Day2.h"
+
 int main() {
+	/*
 	ifstream inputFile;
 	inputFile.open("input.txt");
+	*/
 
 
 	//Just iterate and track highest number after newline or eof
@@ -38,6 +42,8 @@ int main() {
 
 	//Part 2
 	// Do the same thign but with three comparisons. Too lazy to think of something more elegant. O(n) is still n
+
+	/*
 
 	int highestNumber1 = 0;
 	int highestNumber2 = 0;
@@ -87,6 +93,11 @@ int main() {
 	}
 
 	cout << "\n \n The total of top three values is: " << (highestNumber1 + highestNumber2 + highestNumber3);
+
+	*/
+
+	Day2::day2();
+	Day2::day2Pt2();
 
 	
 
