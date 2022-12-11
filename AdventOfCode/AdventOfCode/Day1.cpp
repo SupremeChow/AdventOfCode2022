@@ -3,24 +3,22 @@
 #include <string>
 using namespace std;
 
+#include "Day1.h"
 #include "Day2.h"
+#include "Day3.h"
+#include "Day4.h"
+#include "Day5.h"
 
-int main() {
-	/*
+void Day1::day1() {
 	ifstream inputFile;
 	inputFile.open("input.txt");
-	*/
 
+	//         Just iterate and track highest number after newline or eof
 
-	//Just iterate and track highest number after newline or eof
-	/*
-	* 
 	int highestNumber = 0;
 	int currentNumber = 0;
 	string currentLine;
 
-	
-	
 	while (getline(inputFile, currentLine)) {
 		if (currentLine == "") {
 			//End of section, compare total to current highest
@@ -36,14 +34,13 @@ int main() {
 	highestNumber = currentNumber >= highestNumber ? currentNumber : highestNumber;
 
 	cout << "\n \n Highest Number: " << highestNumber;
+}
 
-	*/
+void Day1::day1Pt2() {
+	ifstream inputFile;
+	inputFile.open("input.txt");
 
-
-	//Part 2
-	// Do the same thign but with three comparisons. Too lazy to think of something more elegant. O(n) is still n
-
-	/*
+	//		Do the same thign but with three comparisons. Too lazy to think of something more elegant. O(n) is still n
 
 	int highestNumber1 = 0;
 	int highestNumber2 = 0;
@@ -62,7 +59,7 @@ int main() {
 				highestNumber3 = highestNumber2;
 				highestNumber2 = highestNumber1;
 				highestNumber1 = currentNumber;
-			} 
+			}
 			else if (currentNumber >= highestNumber2) {
 				highestNumber3 = highestNumber2;
 				highestNumber2 = currentNumber;
@@ -93,13 +90,5 @@ int main() {
 	}
 
 	cout << "\n \n The total of top three values is: " << (highestNumber1 + highestNumber2 + highestNumber3);
-
-	*/
-
-	Day2::day2();
-	Day2::day2Pt2();
-
-	
-
 
 }
