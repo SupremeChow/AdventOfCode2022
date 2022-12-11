@@ -118,8 +118,6 @@ void Day5::day5Pt2() {
 			if (targetChar != ' ')
 				crateStacks[i].push(targetChar);
 		}
-
-
 	}
 
 	//Now loop through rest of input, which should be instructions
