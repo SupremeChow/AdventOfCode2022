@@ -8,6 +8,8 @@ using namespace std;
 #include "Day3.h"
 #include "Day4.h"
 #include "Day5.h"
+#include "Day6.h"
+#include "Day7.h"
 
 int main() {
 	/*
@@ -31,6 +33,15 @@ int main() {
 
 
 	Day5::day5();
-	*/
 	Day5::day5Pt2();
+
+
+	Day6::day6();
+	Day6::day6Pt2();
+*/
+
+	//Day7::day7();
+
+	Day7::day7Pt2();
+
 }
